@@ -11,11 +11,15 @@ Allows to implement in-memory caching.
  - `Delete(key)` - deleting a value from the cache using the key `key`.
 
 ###  Import Module
-`go get -u github.com/vladimirfr/cache`
+
+```
+go get -u github.com/vladimirfr/cache
+```
 
 ### Example 
 
-`func main() {
+```
+func main() {
     cache := cache.New()
 
     cache.Set("userId", 42)
@@ -27,4 +31,5 @@ Allows to implement in-memory caching.
     userId := cache.Get("userId")
 
     fmt.Println(userId)
-}`
+}
+```
